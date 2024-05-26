@@ -1,0 +1,15 @@
+{
+  "config": {
+    "error": {
+      "unknown": "Error inesperado"
+    },
+    "step": {
+      "user": {
+        "description": "Debes acceder a [este enlace]({url}), identificarse con su cuenta de Nintendo y, con el botón derecho en el botón «Elegir persona», copiar la dirección de sesion",
+        "data": {
+          "address": "Dirección de sesión"
+        }
+      }
+    }
+  }
+}

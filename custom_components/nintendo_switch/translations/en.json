@@ -1,0 +1,15 @@
+{
+  "config": {
+    "error": {
+      "unknown": "Unexpected error"
+    },
+    "step": {
+      "user": {
+        "description": "You need to access [this link]({url}), log in with your Nintendo account, and right-click on the 'Choose person' button to copy the session address.",
+        "data": {
+          "address": "Session address"
+        }
+      }
+    }
+  }
+}
