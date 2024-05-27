@@ -9,7 +9,7 @@
   "requirements": [
     "nso-api>=0.9.12",
     "beautifulsoup4>=4.0.1",
-    "itunes-app-scraper-dmi >=0.9.1"
+    "itunes-app-scraper-dmi>=0.9.1"
   ],
   "version": "0.0.0"
 }
