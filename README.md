@@ -40,3 +40,12 @@ The data updates every 30 seconds.
 ## New Friends
 
 If you add new friends, you will need to reload the integration. This can be done directly from the integration screen or simply by restarting Home Assistant.
+
+## Disclaimer
+
+This software is an open-source project developed independently and is not affiliated with, endorsed by, or in any way associated with Nintendo. The use of this software is at your
+own risk. The developer of this software is not responsible for any issues, damages, or bans that may occur as a result of using this software. It is highly recommended that you
+use this application with a secondary Nintendo account to mitigate any potential risks to your primary account.
+
+By using this software, you acknowledge and accept that you are solely responsible for any consequences arising from its use. Please ensure that your actions comply with Nintendo's
+terms of service and any other applicable agreements.
