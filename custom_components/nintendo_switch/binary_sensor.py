@@ -81,6 +81,9 @@ class NintendoSwitchCoordinator(DataUpdateCoordinator):
         if self._need_update_entry:
             await self._update_entry()
 
+        if friends is None:
+            return []
+
         return friends.get("friends", [])
 
     def _mark_need_update(self) -> None:
