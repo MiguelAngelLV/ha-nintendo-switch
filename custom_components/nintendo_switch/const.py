@@ -1,4 +1,4 @@
-"""Constants for Input Stats."""
+"""Constants for Nintendo Switch."""
 
 DOMAIN = "nintendo_switch"
 

@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "nintendo_switch"
 version = "1.0"
-description = "Home Assistant custom component to create a custom input number with stats support"
+description = "Home Assistant custom component to show Nintendo Switch friends status"
 authors = ["Miguel Ángel López <miguel.angel.lopez.vicente@gmail.com>"]
 license = "MIT"
 readme = "README.md"

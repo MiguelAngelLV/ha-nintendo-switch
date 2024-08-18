@@ -102,7 +102,7 @@ class NintendoSwitchCoordinator(DataUpdateCoordinator):
 
 
 class FriendSensor(BinarySensorEntity, CoordinatorEntity):
-    """Input Stats Sensor."""
+    """Nintendo Switch Sensor."""
 
     def __init__(
         self, nsa_id: str, name: str, coordinator: NintendoSwitchCoordinator
