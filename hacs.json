@@ -1,6 +1,5 @@
 {
-  "name": "Input Stats",
+  "name": "Nintendo Switch",
   "render_readme": true,
-  "homeassistant": "2024.1.0",
-  "country": "ES"
+  "homeassistant": "2024.1.0"
 }

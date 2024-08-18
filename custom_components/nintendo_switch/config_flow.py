@@ -1,4 +1,4 @@
-"""Config flow for Input Stats integration."""
+"""Config flow for Nintendo Switch integration."""
 
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ _LOGGER = logging.getLogger(__name__)
 
 
 class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Config flow for Input Stats."""
+    """Config flow for Nintendo Switch."""
 
     VERSION = 1
 
