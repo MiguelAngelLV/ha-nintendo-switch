@@ -135,4 +135,7 @@ class FriendSensor(BinarySensorEntity, CoordinatorEntity):
         self._attr_extra_state_attributes["game"] = (
             friend["presence"].get("game", {}).get("name", "---")
         )
+        self._attr_extra_state_attributes["cover image"] = (
+            friend["presence"].get("game", {}).get("imageUri", "")
+        )
         self.async_write_ha_state()
