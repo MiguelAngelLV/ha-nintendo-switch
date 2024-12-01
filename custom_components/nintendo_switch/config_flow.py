@@ -27,6 +27,7 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Config flow for Nintendo Switch."""
 
     VERSION = 1
+    single_instance_allowed = True
 
     def __init__(self) -> None:
         """Initialize values."""
@@ -39,6 +40,8 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     ) -> FlowResult:
         """Config flow for Nintendo Switch Online."""
         self._errors = {}
+        if self._async_current_entries():
+            return self.async_abort(reason="single_instance_allowed")
 
         if user_input is not None:
             await self.hass.async_add_executor_job(
@@ -46,11 +49,11 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             )
             user_input[CONF_USER_DATA] = self.nso.get_user_data()
             user_input[CONF_GLOBAL_DATA] = self.nso.get_global_data()
-            account = await self.hass.async_add_executor_job(
-                self.nso.account.get_user_self
+            await self.hass.async_add_executor_job(self.nso.account.get_friends_list)
+            await self.async_set_unique_id("nintendo-online-friends")
+            return self.async_create_entry(
+                title="Nintendo Switch Online", data=user_input
             )
-            await self.async_set_unique_id(f"nintendo-online-{account['nsaId']}")
-            return self.async_create_entry(title=account["name"], data=user_input)
 
         return self.async_show_form(
             step_id="user",
