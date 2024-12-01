@@ -3,6 +3,9 @@
     "error": {
       "unknown": "Error inesperado"
     },
+    "abort": {
+      "single_instance_allowed": "Solo se permite una instancia de esta integración."
+    },
     "step": {
       "user": {
         "description": "Debes acceder a [este enlace]({url}), identificarse con su cuenta de Nintendo y, con el botón derecho en el botón «Elegir persona», copiar la dirección de sesion",

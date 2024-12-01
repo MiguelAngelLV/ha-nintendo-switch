@@ -7,7 +7,7 @@
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/MiguelAngelLV/ha-nintendo-switch/issues",
   "requirements": [
-    "nso-api>=0.9.12",
+    "nso-api==0.9.16",
     "beautifulsoup4>=4.0.1",
     "itunes-app-scraper-dmi>=0.9.1"
   ],
